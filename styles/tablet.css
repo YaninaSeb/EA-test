@@ -17,11 +17,27 @@
         margin-top: 20px;
         font-size: 16px;
     }
-    .time_wrap {
+    .timer_wrap {
         width: 358px;
         height: 82px;
         margin-top: 40px;
     }
+    .timer__item_wrap:not(:last-child)::after {
+        top: -10px;
+        left: 76px;
+        font-size: 36px;
+    }
+    .timer__item {
+        width: 64px;
+        height: 42px;
+        font-size: 36px;
+    }
+    .timer__item_bg {
+        width: 64px;
+        height: 40px;
+    }
+
+
     .event_wrap {
         width: 300px;
         margin-top: 40px;
@@ -29,9 +45,6 @@
     .event_info {
         font-size: 16px;
     }
-
-
-    
     /* FOOTER */
     .footer {
         height: 160px;

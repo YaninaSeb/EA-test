@@ -51,12 +51,47 @@ body {
     text-align: center;
     color: rgba(0, 0, 0, 0.8);
 }
-.time_wrap {
-    border: 1px solid red;
+.timer_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 588px;
     height: 129px;
     margin-top: 32px;
 }
+.timer__item_wrap {
+    position: relative;
+}
+.timer__item_wrap:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    top: -22px;
+    left: 134px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 72px;
+    color: rgb(22, 44, 78);
+}
+.timer__item {
+    width: 132px;
+    height: 75px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 100%;
+    text-align: center;
+    color: rgb(22, 44, 78);
+}
+.timer__item_bg {
+    width: 132px;
+    height: 54px;
+    background: url('../assets/svg/timer-vector.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 .event_wrap {
     display: flex;
     flex-direction: column;

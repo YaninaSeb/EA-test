@@ -14,15 +14,16 @@
     .greeting_info {
         margin-top: 16px;
     }
-    .time_wrap {
+    .timer_wrap {
         width: 310px;
+    }
+    .timer__item_wrap:not(:last-child)::after {
+        top: -10px;
+        left: 77px;
     }
     .event_wrap {
         margin-top: 40px;
     }
-    
-
-
     /* FOOTER */
     .footer {
         height: 141px;
