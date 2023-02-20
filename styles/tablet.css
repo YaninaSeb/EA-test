@@ -1,4 +1,11 @@
 @media (max-width: 768px) {
+    /* HEADER */
+    .header {
+        height: 160px;
+    }
+    .header_logo {
+        margin-top: 100px;
+    }
     /* FOOTER */
     .footer {
         height: 160px;

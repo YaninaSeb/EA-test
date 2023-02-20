@@ -8,6 +8,38 @@ body {
     overflow-x: hidden;
 }
 
+/* HEADER */
+.header {
+    width: 100vw;
+    height: 120px;
+}
+.header_logo {
+    width: 190px;
+    height: 60px;
+    margin: 60px auto 0 auto;
+    background: url("../assets/svg/logo.svg");
+    background-size: contain;
+}
+/* .header_vector-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24.48vw;
+    height: 21.88vw;
+    background: url('../assets/svg/vector-left.svg');
+    background-size: cover;
+}
+.header_vector-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12vw;
+    height: 14.79vw;
+    background: url('../assets/svg/vector-right.svg');
+    background-size: cover;
+} */
+
+
 
 /* FOOTER */
 .footer {
