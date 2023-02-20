@@ -22,22 +22,38 @@
         height: 82px;
         margin-top: 40px;
     }
-    .timer__item_wrap:not(:last-child)::after {
+    .timer_item_wrap:not(:last-child)::after {
         top: -10px;
         left: 76px;
         font-size: 36px;
     }
-    .timer__item {
+    .timer_item {
         width: 64px;
         height: 42px;
         font-size: 36px;
     }
-    .timer__item_bg {
+    .timer_item_bg {
         width: 64px;
         height: 40px;
+        background-image: url('../assets/svg/timer-vector2.svg');
+        font-size: 12px;
     }
-
-
+    .timer_item_bg:after {
+        width: 64px;
+        line-height: 40px;
+    }
+    .bg_days:after {
+        content: 'DD';
+    }
+    .bg_hours:after {
+        content: 'HH';
+    }
+    .bg_minutes:after {
+        content: 'MM';
+    }
+    .bg_seconds:after {
+        content: 'SS';
+    }
     .event_wrap {
         width: 300px;
         margin-top: 40px;

@@ -17,7 +17,7 @@
     .timer_wrap {
         width: 310px;
     }
-    .timer__item_wrap:not(:last-child)::after {
+    .timer_item_wrap:not(:last-child)::after {
         top: -10px;
         left: 77px;
     }

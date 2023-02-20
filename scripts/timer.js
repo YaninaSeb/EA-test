@@ -1,7 +1,7 @@
-const days = document.querySelector('.timer__days');
-const hours = document.querySelector('.timer__hours');
-const minutes = document.querySelector('.timer__minutes');
-const seconds = document.querySelector('.timer__seconds');
+const days = document.querySelector('.timer_days');
+const hours = document.querySelector('.timer_hours');
+const minutes = document.querySelector('.timer_minutes');
+const seconds = document.querySelector('.timer_seconds');
 
 let milisecInSec = 1000;
 let milisecInMin = 60 * milisecInSec;
@@ -11,7 +11,7 @@ let milisecInDays = 24 * milisecInHour;
 let deadline = new Date(2023, 4, 31).getTime();
 
 document.addEventListener('DOMContentLoaded', () => {
-    setInterval(getTime, 1000);
+    //setInterval(getTime, 1000);
 });
 
 function getTime() {
