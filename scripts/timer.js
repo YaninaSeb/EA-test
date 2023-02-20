@@ -11,14 +11,12 @@ let milisecInDays = 24 * milisecInHour;
 let deadline = new Date(2023, 4, 31).getTime();
 
 document.addEventListener('DOMContentLoaded', () => {
-    let timerId = setInterval(getTime, 1000);
+    setInterval(getTime, 1000);
 });
 
 function getTime() {
     let currentTime = new Date();
     let diff = deadline - currentTime;
-
-    if (diff <= 0) clearInterval(timerId);
 
     let countDays = Math.floor(diff / milisecInDays);
     diff = diff - (countDays * milisecInDays);
@@ -31,8 +29,8 @@ function getTime() {
 
     let countSec = Math.floor(diff / milisecInSec);
 
-    days.textContent = countDays;
-    hours.textContent = countHours;
-    minutes.textContent = countMin;
-    seconds.textContent = countSec;
+    days.textContent = `${countDays}`.padStart(2, '0');
+    hours.textContent = `${countHours}`.padStart(2, '0');
+    minutes.textContent = `${countMin}`.padStart(2, '0');
+    seconds.textContent = `${countSec}`.padStart(2, '0');
 }
