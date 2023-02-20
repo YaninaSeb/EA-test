@@ -1,13 +1,28 @@
 @media (max-width: 360px) {
     /* HEADER */
     .header {
-        height: 120px;
+        padding-top: 80px;
     }
     .header_logo {
         width: 128px;
         height: 40px;
-        margin-top: 80px;
     }
+    /* MAIN */
+    .greeting_wrap {
+        margin-top: 66px;
+    }
+    .greeting_info {
+        margin-top: 16px;
+    }
+    .time_wrap {
+        width: 310px;
+    }
+    .event_wrap {
+        margin-top: 40px;
+    }
+    
+
+
     /* FOOTER */
     .footer {
         height: 141px;

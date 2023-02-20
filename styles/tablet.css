@@ -1,11 +1,37 @@
 @media (max-width: 768px) {
     /* HEADER */
     .header {
-        height: 160px;
+        padding-top: 100px;
     }
-    .header_logo {
-        margin-top: 100px;
+    /* MAIN */
+    .greeting_wrap {
+        margin-top: 166px;
     }
+    .greeting_title {
+        font-size: 36px;
+        line-height: 37.44px;
+    }
+    .greeting_info {
+        width: 286px;
+        height: 48px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .time_wrap {
+        width: 358px;
+        height: 82px;
+        margin-top: 40px;
+    }
+    .event_wrap {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .event_info {
+        font-size: 16px;
+    }
+
+
+    
     /* FOOTER */
     .footer {
         height: 160px;
