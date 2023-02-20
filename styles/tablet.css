@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    /* FOOTER */
+    .footer {
+        height: 160px;
+    }
+    .footer_form-input {
+        width: 360px;
+        height: 41px;
+        padding:  0 45px 0 20px;
+        font-size: 14px;
+    }
+    .footer_form-btn {
+        top: 4px;
+        right: 4px;
+        width: 33px;
+        height: 33px;
+    }
+    .footer_form-btn span {
+        width: 15.35px;
+        height: 15.35px;
+        top: 8.44px;
+        left: 9.21px;
+    }
+}

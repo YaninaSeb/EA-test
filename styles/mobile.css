@@ -1,0 +1,9 @@
+@media (max-width: 360px) {
+    /* FOOTER */
+    .footer {
+        height: 141px;
+    }
+    .footer_form-input {
+        width: 280px;
+    }
+}
