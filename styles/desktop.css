@@ -138,7 +138,7 @@ body {
     transition: transform 0.8s;
 }
 .event_link:hover {
-    transform: scale(103%);
+    transform: scale(105%);
 }
 .event_link-text {
     font-family: 'Poppins';
@@ -182,15 +182,23 @@ body {
     font-family: 'Roboto';
     font-weight: 400;
 }
+.footer_form-input[data-validate=true] {
+    border: 2px solid rgb(0, 128, 0);
+}
+.footer_form-input[data-validate=false] {
+    border: 2px solid rgb(255, 0, 0);
+}
 .footer_form-btn {
     position: absolute;
     top: 8px;
     right: 8px;
     width: 43px;
     height: 43px;
+    border: none;
     border-radius: 50%;
     background-color: rgba(223, 34, 36, 1);
     transition: transform 0.8s ease-out;
+    cursor: pointer;
 }
 .footer_form-btn span {
     position: absolute;
@@ -201,10 +209,7 @@ body {
     background: url('../assets/svg/arrow-right.svg');
     background-size: contain;
 }
-.footer_form-btn:hover {
-    cursor: pointer;
-    /* transform: scale(110%); */
-}
+
 
 /* POPUP */
 .subs_popup {
@@ -218,9 +223,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(22, 44, 78, 0);
-    transition: background-color 0.5s;
+    transition: background-color 0.6s;
 }
-.show {
+.show_popup {
     visibility: visible;
     background-color: rgba(22, 44, 78, 0.6);
 }
@@ -233,12 +238,14 @@ body {
     padding: 23.81px 16px 0;
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
+    /* transition: all 0.5s ease-in-out; */
 }
 .popup_cancel {
     position: relative;
     width: 24px;
     height: 24px;
     align-self: flex-end;
+    cursor: pointer;
 }
 .popup_cancel::before,
 .popup_cancel:after {
@@ -285,4 +292,5 @@ body {
     line-height: 59.68px;
     text-align: center;
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
