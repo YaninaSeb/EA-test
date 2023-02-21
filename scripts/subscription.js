@@ -45,7 +45,7 @@ function sendData(form) {
     });
 
     let FD = new FormData(form);
-    XHR.open('POST', '', true);
+    XHR.open('POST', '/ajax.json', true);
     XHR.send(FD);
 }
 
