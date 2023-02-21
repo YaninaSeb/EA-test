@@ -18,8 +18,7 @@
     }
     /* MAIN */
     .main {
-        margin-bottom: 170px;
-        height: calc(100% - 160px - 160px);
+        padding-bottom: 170px;
     }
     .greeting_wrap {
         margin-top: 166px;

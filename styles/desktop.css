@@ -5,8 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+.main_page {
+    position: relative;
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -49,8 +51,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    margin-bottom: 200px;
-    height: calc(100% - 120px - 192px);
+    padding-bottom: 200px;
 }
 .greeting_wrap {
     margin-top: 93px;
@@ -185,13 +186,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 192px;
     background-color: rgba(22, 44, 78, 1);
 }
 .footer_form {
     position: relative;
+    align-self: center;
 }
 .footer_form-input {
     width: 440px;
@@ -234,11 +235,14 @@ body {
     background: url('../assets/svg/arrow-right.svg');
     background-size: contain;
 }
+.footer-link_event{
+    align-self:flex-end;
+}
 
 /* POPUP */
 .subs_popup {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
