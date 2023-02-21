@@ -206,14 +206,15 @@
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
     height: 192px;
+    padding: 0 5.73vw;
     background-color: rgba(22, 44, 78, 1);
 }
 .footer_form {
     position: relative;
-    align-self: center;
 }
 .footer_form-input {
     width: 440px;
@@ -256,12 +257,14 @@
     background: url('../assets/svg/arrow-right.svg');
     background-size: contain;
 }
+.footer-link_event_copy {
+    width: 160px;
+}
 .footer-link_event {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-self: center;
     width: 160px;
     height: 30px;
     cursor: pointer;
@@ -270,7 +273,6 @@
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 20px;
-    line-height: 150%;
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: transform 2s;
