@@ -44,8 +44,10 @@ function sendData(form) {
         showPopUp('error');
     });
 
+    XHR.setHeader("Access-Control-Allow-Origin", "*");
+
     let FD = new FormData(form);
-    XHR.open('POST', '/ajax.json', true);
+    XHR.open('POST', 'https://yaninaseb.github.io/SimplePage-test/ajax.json', true);
     XHR.send(FD);
 }
 
