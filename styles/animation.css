@@ -1,17 +1,39 @@
-@keyframes rotateArrow {
-    from {
-        transform: rotate(0);
+@keyframes showBlock {
+    0% {
+        transform:translateY(-60px);
+        opacity: 0;
     }
-    to {
-        transform: rotate(180deg);
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes showLeftVector {
+    0% {
+        transform: translate(-60px, -60px);
+        opacity: 0;
+    }
+    100% {
+        transform:translate(0px, 0px);
+        opacity: 1;
+    }
+}
+@keyframes showRightVector {
+    0% {
+        transform: translate(60px, -60px);
+        opacity: 0;
+    }
+    100% {
+        transform:translate(0px, 0px);
+        opacity: 1;
     }
 }
 
 @keyframes rotateArrow {
-    from {
+    0% {
         transform: rotate(0);
     }
-    to {
+    100% {
         transform: rotate(180deg);
     }
 }
