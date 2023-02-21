@@ -4,7 +4,6 @@ let popupInfo = document.querySelector('.popup_info');
 let btnCancel = document.querySelector('.popup_cancel');
 let btnClose = document.querySelector('.popup_close');
 
-
 document.addEventListener('DOMContentLoaded', () => {
     let form = document.getElementById('form');
 
@@ -25,9 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function emailValidator(email) {
     if (email.length < 8
-        || !(/[a-z]/.test(email))
-        || !(/[A-Z]/.test(email))
-        || !(/[0-9]/.test(email)) 
+        || !(/[a-zA-Z]/.test(email))
         || !(/[@.]/.test(email)) 
     ) {
         return false;
@@ -40,17 +37,12 @@ function sendData(form) {
     const XHR = new XMLHttpRequest();
 
     XHR.addEventListener('load', () => {
-        if (XHR.status == 200) {
-            popupTitle.textContent = 'Success!';
-            popupInfo.textContent = 'You have successfully subscribed to the email newsletter';
-            popup.classList.add('show_popup');
-        }
+        // if (XHR.status == 200) showPopUp(true);
+        showPopUp('success');
     });
 
     XHR.addEventListener('error', () => {
-        popupTitle.textContent = 'Ooops!';
-        popupInfo.textContent = 'Something went wrong...';
-        popup.classList.add('show_popup');
+        showPopUp('error');
     });
 
     let FD = new FormData(form);
@@ -58,8 +50,20 @@ function sendData(form) {
     XHR.send(FD);
 }
 
+function showPopUp(data){
+    if (data === 'success') {
+        popupTitle.textContent = 'Success!';
+        popupInfo.textContent = 'You have successfully subscribed to the email newsletter';
+    } else if (data === 'error'){
+        popupTitle.textContent = 'Ooops!';
+        popupInfo.textContent = 'Something went wrong...';
+    }
+    popup.classList.add('show_popup');
 
-// POP UP
+    let email = document.querySelector('.footer_form-input');
+    email.value = '';
+    email.dataset.validate = '';
+}
 
 btnCancel.addEventListener('click', () => {
     popup.classList.remove('show_popup');
