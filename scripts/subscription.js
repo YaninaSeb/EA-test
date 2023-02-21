@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             email.dataset.validate = false;
         }
     });
-
 });
 
 function emailValidator(email) {

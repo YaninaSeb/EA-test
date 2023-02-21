@@ -3,6 +3,19 @@
     .header {
         padding-top: 100px;
     }
+    /* ASIDE VECTORS */
+    .vector_left {
+        width: 32.68vw;
+        height: 27.34vw;
+        background: url('../assets/svg/vector-left2.svg');
+        background-size: cover;
+    }
+    .vector_right {
+        width: 35vw;
+        height: 34vw;
+        background: url('../assets/svg/vector-right2.svg');
+        background-size: cover;
+    }
     /* MAIN */
     .main {
         margin-bottom: 170px;

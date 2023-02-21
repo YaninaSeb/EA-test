@@ -24,6 +24,25 @@ body {
     width: 100%;
     height: 100%;
 }
+/* ASIDE VECTORS */
+.vector_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24.53vw;
+    height: 21.875vw;
+    background: url('../assets/svg/vector-left1.svg');
+    background-size: cover;
+}
+.vector_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 11.927vw;
+    height: 15vw;
+    background: url('../assets/svg/vector-right1.svg');
+    background-size: cover;
+}
 /* MAIN */
 .main {
     display: flex;
