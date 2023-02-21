@@ -270,6 +270,7 @@
     cursor: pointer;
 }
 .link_event_title {
+    position: relative;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 20px;
@@ -277,13 +278,26 @@
     text-decoration: none;
     transition: transform 2s;
 }
+.link_event_title:after {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+	left: 62px;
+	width: 0;
+	height: 1px;
+	background-color: rgb(255, 255, 255);
+	content: "";
+	transition: width 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
 .link_event_arrow {
     width: 24px;
     height: 24px;
 }
-/* .link_event_title:hover .link_event_arrow{
-    animation: 2s rotateArrow;
-} */
+.link_event_arrow-animation {
+    animation: 0.3s forwards rotateArrow;
+}
 
 /* POPUP */
 .subs_popup {
@@ -370,10 +384,31 @@
 }
 
 /* EVENT PAGE */
-
-.even_page {
+.event_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
     overflow-y: scroll;
+}
+.event_page_title {
+    margin-top: 110px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(22, 44, 78, 0.39);
+    opacity: 0;
+}
+.event_page_title-animation {
+    animation: 0.7s forwards showBlock;
+    animation-delay: 0.5s;
+}
+.event_page_events {
+    width: 88.8vw;
+    height: 682px;
+    margin-top: 40px;
+    border: 1px solid red;
 }
