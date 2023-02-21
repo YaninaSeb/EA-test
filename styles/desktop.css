@@ -183,10 +183,10 @@ body {
     font-weight: 400;
 }
 .footer_form-input[data-validate=true] {
-    border: 2px solid rgb(0, 128, 0);
+    border: 3px solid rgb(0, 128, 0);
 }
 .footer_form-input[data-validate=false] {
-    border: 2px solid rgb(255, 0, 0);
+    border: 3px solid rgb(255, 0, 0);
 }
 .footer_form-btn {
     position: absolute;
