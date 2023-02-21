@@ -4,6 +4,10 @@
         padding-top: 100px;
     }
     /* MAIN */
+    .main {
+        margin-bottom: 170px;
+        height: calc(100% - 160px - 160px);
+    }
     .greeting_wrap {
         margin-top: 166px;
     }

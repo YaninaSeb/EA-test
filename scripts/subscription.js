@@ -54,7 +54,7 @@ function sendData(form) {
     });
 
     let FD = new FormData(form);
-    XHR.open('POST', '');
+    XHR.open('POST', '', true);
     XHR.send(FD);
 }
 

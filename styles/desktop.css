@@ -8,6 +8,7 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 /* HEADER */
 .header {
@@ -29,6 +30,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    margin-bottom: 200px;
+    height: calc(100% - 120px - 192px);
 }
 .greeting_wrap {
     margin-top: 93px;
@@ -128,22 +131,22 @@ body {
 }
 .event_link {
     position: relative;
-    display: inline-block;
     width: 240px;
     height: 60px;
     padding: 16px 0 0 28px;
-    background-color: #1D4169;
+    background-color: rgb(29, 65, 105);
     border-radius: 40px;
     text-decoration: none;
-    transition: transform 0.8s;
+    transition: all 0.4s;
 }
-.event_link:hover {
-    transform: scale(105%);
+.event_link:hover{
+    box-shadow: 0px 0px 10px 0px rgba(29, 65, 105);;
 }
 .event_link-text {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
+    vertical-align: middle;
     color:rgba(255, 255, 255, 1);
 }
 .event_link-arrow {
@@ -197,8 +200,11 @@ body {
     border: none;
     border-radius: 50%;
     background-color: rgba(223, 34, 36, 1);
-    transition: transform 0.8s ease-out;
+    transition: transform 0.4s;
+}
+.footer_form-btn:hover {
     cursor: pointer;
+    transform: scale(106%);
 }
 .footer_form-btn span {
     position: absolute;
@@ -209,7 +215,6 @@ body {
     background: url('../assets/svg/arrow-right.svg');
     background-size: contain;
 }
-
 
 /* POPUP */
 .subs_popup {
@@ -238,7 +243,6 @@ body {
     padding: 23.81px 16px 0;
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
-    /* transition: all 0.5s ease-in-out; */
 }
 .popup_cancel {
     position: relative;
