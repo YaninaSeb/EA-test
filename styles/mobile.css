@@ -1,4 +1,7 @@
 @media (max-width: 360px) {
+    .main_page_wrap {
+        height: calc(100vh - 141px);
+    }
     /* HEADER */
     .header {
         padding-top: 80px;
@@ -17,9 +20,6 @@
         height: 44.44vw;
     }
     /* MAIN */
-    .main {
-        padding-bottom: 150px;
-    }
     .greeting_wrap {
         margin-top: 66px;
     }

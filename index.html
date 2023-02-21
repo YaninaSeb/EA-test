@@ -11,49 +11,51 @@
 </head>
 <body>
     <div class="main_page">
-        <header class="header">
-            <div class="header_logo">
-                <a href=""><img src="assets/svg/logo.svg" class="logo" alt="logo"></a>
-            </div>
-        </header>
-    
-        <section class="aside_wrap">
-            <div class="vector_left"></div>
-            <div class="vector_right"></div>
-        </section>
-    
-        <main class="main">
-            <div class="greeting_wrap">
-                <h1 class="greeting_title">Under Construction</h1>
-                <div class="greeting_info"><p>We're making lots of improvements and will be back soon</p></div>
-            </div>
-            <div class="timer_wrap">
-                <div class="timer_item_wrap">
-                    <div class="timer_item timer_days">00</div>
-                    <div class="timer_item_bg bg_days"></div>
+        <div class="main_page_wrap">
+            <header class="header">
+                <div class="header_logo">
+                    <a href=""><img src="assets/svg/logo.svg" class="logo" alt="logo"></a>
                 </div>
-                <div class="timer_item_wrap">
-                    <div class="timer_item timer_hours">00</div>
-                    <div class="timer_item_bg bg_hours"></div>
+            </header>
+        
+            <section class="aside_wrap">
+                <div class="vector_left"></div>
+                <div class="vector_right"></div>
+            </section>
+        
+            <main class="main">
+                <div class="greeting_wrap">
+                    <h1 class="greeting_title">Under Construction</h1>
+                    <div class="greeting_info"><p>We're making lots of improvements and will be back soon</p></div>
                 </div>
-                <div class="timer_item_wrap">
-                    <div class="timer_item timer_minutes">00</div>
-                    <div class="timer_item_bg bg_minutes"></div>
+                <div class="timer_wrap">
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_days">00</div>
+                        <div class="timer_item_bg bg_days"></div>
+                    </div>
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_hours">00</div>
+                        <div class="timer_item_bg bg_hours"></div>
+                    </div>
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_minutes">00</div>
+                        <div class="timer_item_bg bg_minutes"></div>
+                    </div>
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_seconds">00</div>
+                        <div class="timer_item_bg bg_seconds"></div>
+                    </div>
                 </div>
-                <div class="timer_item_wrap">
-                    <div class="timer_item timer_seconds">00</div>
-                    <div class="timer_item_bg bg_seconds"></div>
+                <div class="event_wrap">
+                    <div class="event_info"><p>Check our event page when you wait:</p></div>
+                    <a href="https://egorovagency.by/#main" class="event_link" target="_blank">
+                        <div class="event_link-text">Go to the event</div>
+                        <div class="event_link-arrow"></div>
+                    </a>
                 </div>
-            </div>
-            <div class="event_wrap">
-                <div class="event_info"><p>Check our event page when you wait:</p></div>
-                <a href="https://egorovagency.by/#main" class="event_link" target="_blank">
-                    <div class="event_link-text">Go to the event</div>
-                    <div class="event_link-arrow"></div>
-                </a>
-            </div>
-        </main>
-    
+            </main>
+        </div>
+
         <footer class="footer">
             <div class="footer_form">
                 <form id="form">
@@ -61,10 +63,10 @@
                     <button type="submit" class="footer_form-btn"><span></span></button>
                 </form>
             </div>
-            <!-- <div class="footer-link_event">
-                <div class="link_event_title">Other Events</div>
-                <div class="link_event_arrow"></div>
-            </div> -->
+            <div class="footer-link_event">
+                <a href="#even_page" class="link_event_title">Other Events</a>
+                <img src="assets/svg/arrow-down.svg" class="link_event_arrow"></img>
+            </div>
         </footer>
     
         <section class="subs_popup">
@@ -76,6 +78,8 @@
             </div>
         </section>
     </div>
+
+    <div id="even_page" class="even_page"></div>
 
 
     <script src="scripts/timer.js"></script>
