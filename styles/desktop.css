@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
     scroll-behavior: smooth;
 }
 .main_page {
@@ -75,7 +76,6 @@
     animation-delay: 0.3s;
 }
 .greeting_title {
-    font-family: 'Poppins';
     font-weight: 700;
     font-size: 72px;
     text-transform: uppercase;
@@ -86,7 +86,6 @@
     width: 423px;
     height: 54px;
     margin: 8px auto 0 auto;
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
     text-align: center;
@@ -111,7 +110,6 @@
     position: absolute;
     top: -22px;
     left: 134px;
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 72px;
     color: rgb(22, 44, 78);
@@ -119,7 +117,6 @@
 .timer_item {
     width: 132px;
     height: 75px;
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 72px;
     line-height: 100%;
@@ -132,7 +129,6 @@
     height: 54px;
     background-image: url('../assets/svg/timer-vector1.svg');
     background-size: 100%;
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     color: rgb(255, 255, 255);
@@ -168,7 +164,6 @@
     animation-delay: 0.9s;
 }
 .event_info {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.8)
@@ -187,7 +182,6 @@
     box-shadow: 0px 0px 10px 0px rgba(29, 65, 105);;
 }
 .event_link-text {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
     vertical-align: middle;
@@ -271,7 +265,6 @@
 }
 .link_event_title {
     position: relative;
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -354,7 +347,6 @@
 }
 .popup_title {
     margin-top: 50px;
-    font-family: 'Poppins';
     font-weight: 700;
     font-size: 36px;
     text-transform: uppercase;
@@ -362,7 +354,6 @@
 }
 .popup_info {
     margin-top: 28.84px;
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -374,7 +365,6 @@
     margin-top: 29.84px;
     background: rgb(29, 65, 105);
     border-radius: 40px;
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
     line-height: 59.68px;
@@ -394,7 +384,6 @@
 }
 .event_page_title {
     margin-top: 110px;
-    font-family: 'Poppins';
     font-weight: 700;
     font-size: 72px;
     text-align: center;
@@ -410,5 +399,106 @@
     width: 88.8vw;
     height: 682px;
     margin-top: 40px;
-    border: 1px solid red;
+}
+.events_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.events_item {
+    position: relative;
+    width: 86px;
+    height: 682px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1s;
+}
+.events_item_show {
+    width: 56.35vw;
+    transition: all 1s;
+}
+.events_item_title {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 100%;
+    padding: 0 27px 20px;
+    border-right: 1px solid rgb(255, 255, 255);
+    background: rgba(18, 18, 18, 0.7);
+    background-blend-mode: darken;
+    z-index: 3;
+    transition: all 1s;
+}
+.events_item_title_show {
+    background: rgb(22, 44, 78);
+}
+.item_title_num {
+    width: 42px;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.item_title_name {
+    width: 600px;
+    margin-bottom: 290px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    transform: rotate(-90deg);
+}
+.events_item_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 86px;
+    width: 364px;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+.item_about_num {
+    width: 310px;
+    height: 295px;
+    font-weight: 600;
+    /* font-size: 310px; */
+    text-align: left;
+    color: rgba(255, 255, 255, 0.04);
+}
+.item_about_title {
+    margin-left: 40px;
+    margin-top: 180px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.item_about_date {
+    margin-left: 40px;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.item_about_btn {
+    width: 13.28vw;
+    height: 59px;
+    margin: 25px 0 51px 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-left-width: 8px;
+    text-align: center;
+    line-height: 59px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.events_item_bg {
+    position: absolute;
+    width: auto;
+    height: 681px;
 }
