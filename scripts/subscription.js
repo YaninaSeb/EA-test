@@ -36,8 +36,11 @@ function sendData(form) {
     const XHR = new XMLHttpRequest();
 
     XHR.addEventListener('load', () => {
-        // if (XHR.status == 200) showPopUp('success');
-        showPopUp('success');
+        if (XHR.status == 200) {
+            showPopUp('success');
+        } else {
+            showPopUp('error');
+        }
     });
 
     XHR.addEventListener('error', () => {
@@ -46,9 +49,8 @@ function sendData(form) {
 
     let FD = new FormData(form);
 
-    XHR.open('POST', 'https://yaninaseb.github.io/SimplePage-test', true);
+    XHR.open('POST', 'https://yaninaseb.github.io/SimplePage-test/ajax.php', true);
     XHR.setRequestHeader("Access-Control-Allow-Origin", "*");
-    XHR.setRequestHeader('accept', 'application/json');
     XHR.send(FD);
 }
 
