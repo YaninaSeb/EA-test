@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+    .main_page_wrap {
+        height: calc(100vh - 160px);
+        padding-bottom: 30px;
+    }
+    /* HEADER */
+    .header {
+        padding-top: 100px;
+    }
+    /* ASIDE VECTORS */
+    .vector_left {
+        width: 32.68vw;
+        height: 27.34vw;
+        background: url('../assets/svg/vector-left2.svg');
+        background-size: cover;
+    }
+    .vector_right {
+        width: 35vw;
+        height: 34vw;
+        background: url('../assets/svg/vector-right2.svg');
+        background-size: cover;
+    }
+    /* MAIN */
+    .greeting_wrap {
+        margin-top: 166px;
+    }
+    .greeting_title {
+        font-size: 36px;
+        line-height: 37.44px;
+    }
+    .greeting_info {
+        width: 286px;
+        height: 48px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .timer_wrap {
+        width: 358px;
+        height: 82px;
+        margin-top: 40px;
+    }
+    .timer_item_wrap:not(:last-child)::after {
+        top: -10px;
+        left: 76px;
+        font-size: 36px;
+    }
+    .timer_item {
+        width: 64px;
+        height: 42px;
+        font-size: 36px;
+    }
+    .timer_item_bg {
+        width: 64px;
+        height: 40px;
+        background-image: url('../assets/svg/timer-vector2.svg');
+        font-size: 12px;
+    }
+    .timer_item_bg:after {
+        width: 64px;
+        line-height: 40px;
+    }
+    .bg_days:after {
+        content: 'DD';
+    }
+    .bg_hours:after {
+        content: 'HH';
+    }
+    .bg_minutes:after {
+        content: 'MM';
+    }
+    .bg_seconds:after {
+        content: 'SS';
+    }
+    .event_wrap {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .event_info {
+        font-size: 16px;
+    }
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 160px;
+    }
+    .footer_form-input {
+        width: 360px;
+        height: 41px;
+        padding:  0 45px 0 20px;
+        font-size: 14px;
+    }
+    .footer_form-btn {
+        top: 4px;
+        right: 4px;
+        width: 33px;
+        height: 33px;
+    }
+    .footer_form-btn span {
+        width: 15.35px;
+        height: 15.35px;
+        top: 8.44px;
+        left: 9.21px;
+    }
+    .footer-btn_event_copy {
+        display: none;
+    }
+    .footer-btn_event {
+        width: 128px;
+        height: 24px;
+        margin-top: 16px;
+    }
+    .btn_event_title {
+        font-size: 16px;
+    }
+}

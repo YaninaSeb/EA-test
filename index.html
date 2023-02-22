@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles/desktop.css" >
+    <link rel="stylesheet"  href="styles/tablet.css" >
+    <link rel="stylesheet"  href="styles/mobile.css" >
+    <link rel="stylesheet"  href="styles/events.css" >
+    <title>Simple Page</title>
+</head>
+<body>
+    <div class="main_page">
+        <div class="main_page_wrap">
+            <header class="header">
+                <div class="header_logo">
+                    <a href=""><img src="assets/svg/logo.svg" class="logo" alt="logo"></a>
+                </div>
+            </header>
+        
+            <section class="aside_wrap">
+                <div class="vector_left"></div>
+                <div class="vector_right"></div>
+            </section>
+        
+            <main class="main">
+                <div class="greeting_wrap">
+                    <h1 class="greeting_title">Under Construction</h1>
+                    <div class="greeting_info"><p>We're making lots of improvements and will be back soon</p></div>
+                </div>
+                <div class="timer_wrap">
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_days">00</div>
+                        <div class="timer_item_bg bg_days"></div>
+                    </div>
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_hours">00</div>
+                        <div class="timer_item_bg bg_hours"></div>
+                    </div>
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_minutes">00</div>
+                        <div class="timer_item_bg bg_minutes"></div>
+                    </div>
+                    <div class="timer_item_wrap">
+                        <div class="timer_item timer_seconds">00</div>
+                        <div class="timer_item_bg bg_seconds"></div>
+                    </div>
+                </div>
+                <div class="event_wrap">
+                    <div class="event_info"><p>Check our event page when you wait:</p></div>
+                    <a href="https://egorovagency.by/#main" class="event_link" target="_blank">
+                        <div class="event_link-text">Go to the event</div>
+                        <div class="event_link-arrow"></div>
+                    </a>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-btn_event_copy"></div>
+            <div class="footer_form">
+                <form id="form">
+                    <input type="text" class="footer_form-input" data-validate placeholder="Enter your Email and get notified">
+                    <button type="submit" class="footer_form-btn"><span></span></button>
+                </form>
+            </div>
+            <div class="footer-btn_event">
+                <div class="btn_event_title">Other Events</div>
+                <a href="#event_page" class="link_event_title"></a>
+                <img src="assets/svg/arrow-down.svg" class="link_event_arrow"></img>
+            </div>
+        </footer>
+    
+        <section class="subs_popup">
+            <div class="popup_wrap">
+                <div class="popup_cancel"></div>
+                <div class="popup_title"></div>
+                <div class="popup_info"></div>
+                <div class="popup_close">Close</div>
+            </div>
+        </section>
+    </div>
+
+    <div id="event_page" class="event_page">
+        <div class="event_page_title">All events</div>
+        <div class="event_page_events">
+            <ul class="events_wrapper"></ul>
+        </div>
+    </div>
+
+    <script src="scripts/timer.js"></script>
+    <script src="scripts/subscription.js"></script>
+    <script src="scripts/events.js"></script>
+    <script src="scripts/notes.js"></script>
+</body>
+</html>
