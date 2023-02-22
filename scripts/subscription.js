@@ -49,8 +49,12 @@ function sendData(form) {
 
     let FD = new FormData(form);
 
-    XHR.open('POST', '/ajax.php', true);
+    XHR.open('POST', 'https://yaninaseb.github.io/SimplePage-test/ajax.php', true);
     XHR.setRequestHeader("Access-Control-Allow-Origin", "*");
+    XHR.setRequestHeader(
+        "Content-Type",
+        "application/x-www-form-urlencoded"
+    );
     XHR.send(FD);
 }
 
