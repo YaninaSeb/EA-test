@@ -11,7 +11,7 @@ let dataEvent = [
     ['06', 'Network Design & Implementation', '27.02.2022', 'assets/img/event1.png'],
     ['07', 'System Design & Engineering', '15.01.2022', 'assets/img/event1.png'],
     ['08', 'Client Care Plans', '10.11.2021', 'assets/img/event1.png']
-]
+];
 
 dataEvent.forEach((e) => {
     let item = document.createElement('li');
@@ -39,11 +39,10 @@ let eventAsideBlock = document.querySelectorAll('.events_item_title')
 
 eventLink.addEventListener('click', (e) => {
     arrowLink.classList.add('link_event_arrow-animation');
-    
     eventLink.setAttribute('href', '#event_page');
-
     eventPageTitle.classList.add('event_page_title-animation');
 });
+
 
 eventsList.forEach((item, ind) => {
     item.addEventListener('click', () => {
