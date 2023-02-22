@@ -283,7 +283,6 @@
 	transition: width 0.3s ease-out;
     transform: translateX(-50%);
 }
-
 .link_event_arrow {
     width: 24px;
     height: 24px;
@@ -291,7 +290,6 @@
 .link_event_arrow-animation {
     animation: 0.3s forwards rotateArrow;
 }
-
 /* POPUP */
 .subs_popup {
     visibility: hidden;

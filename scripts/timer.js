@@ -11,7 +11,7 @@ let milisecInDays = 24 * milisecInHour;
 let deadline = new Date(2023, 4, 31).getTime();
 
 document.addEventListener('DOMContentLoaded', () => {
-    //setInterval(getTime, 1000);
+    setInterval(getTime, 1000);
 });
 
 function getTime() {

@@ -28,14 +28,6 @@
         opacity: 1;
     }
 }
-@keyframes underlineEventLink {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
 @keyframes rotateArrow {
     0% {
         transform: rotate(0);
