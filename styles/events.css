@@ -64,6 +64,7 @@
 }
 .item_title_num {
     width: 42px;
+    font-family: 'SF Pro Display';
     font-weight: 600;
     font-size: 40px;
     color: rgb(255, 255, 255);
@@ -71,6 +72,7 @@
 .item_title_name {
     width: 600px;
     margin-bottom: 290px;
+    font-family: 'SF Pro Display';
     font-weight: 600;
     font-size: 32px;
     color: rgb(255, 255, 255);
@@ -135,6 +137,7 @@
     color: rgb(22, 44, 78);
 }
 .item_about_btn a {
+    font-family: 'SF Pro Display';
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }

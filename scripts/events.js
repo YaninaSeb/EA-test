@@ -1,3 +1,4 @@
+let btnLink = document.querySelector('.btn_event_title');
 let eventLink = document.querySelector('.link_event_title');
 let arrowLink = document.querySelector('.link_event_arrow');
 let eventsWrap = document.querySelector('.events_wrapper');
@@ -37,12 +38,22 @@ let eventsList = document.querySelectorAll('.events_item');
 let eventAsideBlock = document.querySelectorAll('.events_item_title')
 
 
-eventLink.addEventListener('click', (e) => {
+btnLink.addEventListener('click', (e) => {
     arrowLink.classList.add('link_event_arrow-animation');
-    eventLink.setAttribute('href', '#event_page');
-    eventPageTitle.classList.add('event_page_title-animation');
+    btnLink.classList.add('btn_event_title_after');
+    setTimeout(() => {
+        eventLink.click();
+        eventPageTitle.classList.add('event_page_title-animation');
+        resetLinkStyles();
+    }, 300);
 });
 
+function resetLinkStyles() {
+    setTimeout(() => {
+        arrowLink.classList.remove('link_event_arrow-animation');
+        btnLink.classList.remove('btn_event_title_after');
+    }, 400);
+}
 
 eventsList.forEach((item, ind) => {
     item.addEventListener('click', () => {

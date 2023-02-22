@@ -102,15 +102,15 @@
         top: 8.44px;
         left: 9.21px;
     }
-    .footer-link_event_copy {
+    .footer-btn_event_copy {
         display: none;
     }
-    .footer-link_event {
+    .footer-btn_event {
         width: 128px;
         height: 24px;
         margin-top: 16px;
     }
-    .link_event_title {
+    .btn_event_title {
         font-size: 16px;
     }
 }
