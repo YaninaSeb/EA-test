@@ -44,12 +44,3 @@
         transform: rotate(180deg);
     }
 }
-
-@keyframes showEvent {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        width: 56.35vw;
-    }
-}
