@@ -1,4 +1,4 @@
-# SimplePage
+# EA-test
 
 ## Описание проекта
 Это проект по созданию одностраничного сайта с адаптивной вёрсткой  
@@ -17,7 +17,7 @@
 
 Клонировать репозиторий:
 
-    https://github.com/YaninaSeb/SimplePage-test.git
+    https://github.com/YaninaSeb/EA-test.git
 
 ## Скриншоты:
 <details><summary><b>Развернуть</b></summary>
@@ -31,4 +31,4 @@
 </details>
 
 ## Ссылка на сайт:
-https://yaninaseb.github.io/SimplePage-test/
+https://yaninaseb.github.io/EA-test/
