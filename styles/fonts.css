@@ -18,3 +18,18 @@
     src: url('../assets/fonts/Roboto/Regular/Roboto-Regular.ttf');
     font-weight: 400;
 }
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../assets/fonts/SFProDisplay/Regular/SFProDisplay-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../assets/fonts/SFProDisplay/Medium/SFProDisplay-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../assets/fonts/SFProDisplay/SemiBold/SFProDisplay-Semibold.ttf');
+    font-weight: 500;
+}

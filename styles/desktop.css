@@ -13,6 +13,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 .main_page_wrap {
     position: relative;
@@ -214,7 +215,6 @@
     width: 440px;
     height: 59px;
     padding: 0 55px 0 27px;
-    border: 1px solid rgb(255, 255, 255); 
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
     font-size: 18px;
@@ -240,7 +240,7 @@
 }
 .footer_form-btn:hover {
     cursor: pointer;
-    transform: scale(106%);
+    transform: scale(1.06);
 }
 .footer_form-btn span {
     position: absolute;
