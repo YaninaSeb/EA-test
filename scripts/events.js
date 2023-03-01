@@ -26,7 +26,7 @@ dataEvent.forEach((e) => {
             <div class="item_about_num">${e[0]}</div>
             <div class="item_about_title">${e[1]}</div>
             <div class="item_about_date">${e[2]}</div>
-            <div class="item_about_btn"><a href="https://egorovagency.by/#main" target="_blank">More information</a></div>
+            <div class="item_about_btn"><a href="" target="_blank">More information</a></div>
         </div>
         <img class="events_item_bg" src="${e[3]}" alt="event">
     `
